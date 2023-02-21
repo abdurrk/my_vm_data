@@ -17,6 +17,7 @@ int main()
     obj.AddMember("n",Value(kNullType),allocator);
     obj.AddMember("i",123,allocator);
     obj.AddMember("pi",3.1416,allocator);
+    obj.AddMember("s","a\u0000b",allocator);
 
     Value arr(kArrayType);
     arr.PushBack(1,allocator);
@@ -52,8 +53,14 @@ int main()
     static const char* kTypeNames[]=
         {"Null","False","True","Object","Array","String","Number" };
     for(Value::ConstMemberIterator itr = document.MemberBegin();itr != document.MemberEnd();++itr)
-        std::cout<<itr->name.GetString(),"\n",kTypeNames[itr->value.GetType()];    
-    
+        std::cout<<itr->name.GetString(),"\n",kTypeNames[itr->value.GetType()]; 
+    std::cout<<std::endl; 
+    assert(document["s"].IsString());
+    std::cout<<document["s"].GetStringLength()<<std::endl;
+    if(document["hello"] == document["n"])printf("True");
+    if(document["hello"] == "world")std::cout<<"true\n";
+    if(document["i"] == 123)printf("inside if\n");
+    if(document["pi"] != 3.1416)printf("inside if \n"); 
     return 0;
 
 
