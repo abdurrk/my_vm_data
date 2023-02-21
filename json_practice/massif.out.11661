@@ -1,0 +1,274 @@
+desc: --time-unit=ms
+cmd: ./jp
+time_unit: ms
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=676
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=708
+mem_heap_B=72744
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=711
+mem_heap_B=72745
+mem_heap_extra_B=47
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=711
+mem_heap_B=138305
+mem_heap_extra_B=63
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=719
+mem_heap_B=138306
+mem_heap_extra_B=86
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=720
+mem_heap_B=138818
+mem_heap_extra_B=94
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=721
+mem_heap_B=138819
+mem_heap_extra_B=117
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=721
+mem_heap_B=139075
+mem_heap_extra_B=125
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=743
+mem_heap_B=140099
+mem_heap_extra_B=133
+mem_stacks_B=0
+heap_tree=detailed
+n3: 140099 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4916979: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x400647D: call_init.part.0 (dl-init.c:70)
+   n1: 72704 0x4006567: call_init (dl-init.c:33)
+    n1: 72704 0x4006567: _dl_init (dl-init.c:117)
+     n0: 72704 0x40202E9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n1: 65560 0x109C2C: rapidjson::CrtAllocator::Malloc(unsigned long) (allocators.h:67)
+  n1: 65560 0x110102: rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>::AddChunk(unsigned long) (allocators.h:240)
+   n1: 65560 0x10F1FA: rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>::Malloc(unsigned long) (allocators.h:182)
+    n1: 65560 0x10E1C4: rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::AddMember(rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >&, rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >&, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>&) (document.h:1194)
+     n1: 65560 0x10D1B1: rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::AddMember(rapidjson::GenericStringRef<char>, rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >&, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>&) (document.h:1292)
+      n1: 65560 0x10CD24: rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::AddMember(rapidjson::GenericStringRef<char>, rapidjson::GenericStringRef<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>&) (document.h:1306)
+       n0: 65560 0x10940B: main (json_prac2.cpp:14)
+ n0: 1835 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=753
+mem_heap_B=140100
+mem_heap_extra_B=156
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=754
+mem_heap_B=141124
+mem_heap_extra_B=164
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=756
+mem_heap_B=141125
+mem_heap_extra_B=187
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=756
+mem_heap_B=141381
+mem_heap_extra_B=195
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=777
+mem_heap_B=141381
+mem_heap_extra_B=195
+mem_stacks_B=0
+heap_tree=peak
+n4: 141381 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4916979: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x400647D: call_init.part.0 (dl-init.c:70)
+   n1: 72704 0x4006567: call_init (dl-init.c:33)
+    n1: 72704 0x4006567: _dl_init (dl-init.c:117)
+     n0: 72704 0x40202E9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n1: 65560 0x109C2C: rapidjson::CrtAllocator::Malloc(unsigned long) (allocators.h:67)
+  n1: 65560 0x110102: rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>::AddChunk(unsigned long) (allocators.h:240)
+   n1: 65560 0x10F1FA: rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>::Malloc(unsigned long) (allocators.h:182)
+    n1: 65560 0x10E1C4: rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::AddMember(rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >&, rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >&, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>&) (document.h:1194)
+     n1: 65560 0x10D1B1: rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::AddMember(rapidjson::GenericStringRef<char>, rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >&, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>&) (document.h:1292)
+      n1: 65560 0x10CD24: rapidjson::GenericValue<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator> >::AddMember(rapidjson::GenericStringRef<char>, rapidjson::GenericStringRef<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>&) (document.h:1306)
+       n0: 65560 0x10940B: main (json_prac2.cpp:14)
+ n1: 2048 0x109C7E: rapidjson::CrtAllocator::Realloc(void*, unsigned long, unsigned long) (allocators.h:77)
+  n1: 2048 0x10FF7B: rapidjson::internal::Stack<rapidjson::CrtAllocator>::Resize(unsigned long) (stack.h:201)
+   n0: 2048 in 3 places, all below massif's threshold (1.00%)
+ n0: 1069 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=15
+#-----------
+time=777
+mem_heap_B=140357
+mem_heap_extra_B=187
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=777
+mem_heap_B=140101
+mem_heap_extra_B=179
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=777
+mem_heap_B=140100
+mem_heap_extra_B=156
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=793
+mem_heap_B=139588
+mem_heap_extra_B=148
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=793
+mem_heap_B=139587
+mem_heap_extra_B=125
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=793
+mem_heap_B=139331
+mem_heap_extra_B=117
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=793
+mem_heap_B=139330
+mem_heap_extra_B=94
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=794
+mem_heap_B=73770
+mem_heap_extra_B=78
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=794
+mem_heap_B=73769
+mem_heap_extra_B=55
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=794
+mem_heap_B=73729
+mem_heap_extra_B=39
+mem_stacks_B=0
+heap_tree=detailed
+n3: 73729 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x4916979: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x400647D: call_init.part.0 (dl-init.c:70)
+   n1: 72704 0x4006567: call_init (dl-init.c:33)
+    n1: 72704 0x4006567: _dl_init (dl-init.c:117)
+     n0: 72704 0x40202E9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n1: 1024 0x4B34C23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x4B43D5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x4B42FDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x4B41754: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x4B41754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x4B36056: fwrite (iofwrite.c:39)
+       n1: 1024 0x49A8B34: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+        n1: 1024 0x49A8E8A: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+         n0: 1024 0x1096A8: main (json_prac2.cpp:34)
+ n0: 1 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=25
+#-----------
+time=795
+mem_heap_B=73728
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=808
+mem_heap_B=1024
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=812
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
