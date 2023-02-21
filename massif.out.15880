@@ -1,0 +1,67 @@
+desc: --time-unit=ms
+cmd: ./vma
+time_unit: ms
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=573
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=606
+mem_heap_B=472704
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=608
+mem_heap_B=473728
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=634
+mem_heap_B=473728
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=peak
+n3: 473728 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 400000 0x1091DE: main (valgrind_massif.cpp:5)
+ n1: 72704 0x4916979: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x400647D: call_init.part.0 (dl-init.c:70)
+   n1: 72704 0x4006567: call_init (dl-init.c:33)
+    n1: 72704 0x4006567: _dl_init (dl-init.c:117)
+     n0: 72704 0x40202E9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n0: 1024 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=5
+#-----------
+time=634
+mem_heap_B=401024
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=636
+mem_heap_B=400000
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
