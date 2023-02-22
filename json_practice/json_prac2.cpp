@@ -61,7 +61,10 @@ int main()
     if(document["hello"] == "world")std::cout<<"true\n";
     if(document["i"] == 123)printf("inside if\n");
     if(document["pi"] != 3.1416)printf("inside if \n"); 
+    const char* json=
     return 0;
+
+
 
 
 }
