@@ -63,7 +63,7 @@ int main()
         device_doc.Accept(writer);
         printf("%s\n",sb.GetString());  
     }
-    //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
+    
 
 
     return 0;
