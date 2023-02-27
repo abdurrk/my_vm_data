@@ -4,6 +4,7 @@
 #include"rapidjson/writer.h"
 #include"rapidjson/document.h"
 #include"rapidjson/stringbuffer.h"
+using namespace rapidjson;
 using json=rapidjson::Document;
 
 void inline print_json(const json& j)
@@ -17,7 +18,7 @@ void inline print_json(const json& j)
 }
 int main()
 {
-    json doc;
+    json doc,doc2;
     std::string data="{\"hello\":\"world\"}";
     doc.Parse(data.c_str());
     print_json(doc);
@@ -28,5 +29,12 @@ int main()
     node.SetString("c++");
     std::cout<<"after update\n";
     print_json(doc);
+    std::string data2="{\"hardnes\":\"much\" \",\" \"time_taken\":\"months\"}";
+    doc2.Parse(data2.c_str());
+    rapidjson::Value v(doc2,doc.GetAllocator());
+    doc.PushBack(v,doc.GetAllocator());
+    print_json(doc);
+
+
     return 0;
 } 
