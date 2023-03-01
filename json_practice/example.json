@@ -1,0 +1,10 @@
+{
+    "name":"jhon",
+    "age":"30",
+    "address":{
+        "street":"123 main st",
+        "city":"Anytown",
+        "state":"CA",
+        "zip":"12345"
+    }
+}

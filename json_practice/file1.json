@@ -1,0 +1,5 @@
+{
+    "parameterA" : "valueA",
+    "parameterB" : [{"status": true, "B_1": 2.116, "B_2": 3}],
+    "parameterC" : 1.23456
+    }
