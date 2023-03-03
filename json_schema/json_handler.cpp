@@ -36,15 +36,14 @@ void Json_Validator()
 
 
 }
-void CreateTree(document& json )
+void CreateTree(document& json)
 {
     std::shared_ptr<ElementManager>  ObjectElement_maneger=std::make_shared<ELementManager>();  //create shred ptr obj of elemnt manager
     //create root element and set it to elemnt mangr
    // for(auto element:json.GetObject())
-   for(int i=0;i<=json.Size();i++)
+    for(auto m:json.GetObject())
     {
-        std::string str=json[i].GetString();
-        if(str == "identifier")
+        if()
         {
 
         }

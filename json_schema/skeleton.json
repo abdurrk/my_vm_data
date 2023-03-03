@@ -4,17 +4,20 @@
             "identifier":"Root",
             "type":"Structure",
             "uid":1,
+            "address":"root",
             "parent":0
         },
         {
             "identifier":"network",
             "type":"Structure",
+            "address":"root/network",
             "uid":2,
             "parent":1
         },
         {
             "identifier":"Ip",
             "type":"Structure",
+            "address":"root/network/Ip",
             "uid":3,
             "parent":2
         },
